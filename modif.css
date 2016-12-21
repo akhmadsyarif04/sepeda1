@@ -1,0 +1,254 @@
+*{
+    padding:0px;
+    margin:0px;
+    max-width:100% !important;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+/*==== Judul header ====*/
+#judul{
+    border: 1px solid none;
+    width: 100%;
+    height: 130px;
+    background-color: #0ec7b8;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+#judul center{
+    font-size: 3.5em;
+}
+
+/*======== login =========*/
+
+.login{
+    font-size: 2em;
+    border: 1px solid #1c78ac;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    padding: 10px 10px;
+    -moz-animation:login 3s ;
+    -webkit-animation:login 3s;
+    animation:login 3s
+}
+
+@-webkit-keyframes login{
+    from{transform:translate(0px, -1000px);}
+    to{transform:translate(0px,0px);}}
+
+    @keyframes login{
+        from{transform:translate(0px,-1000px);opacity:0}
+        to{transform:translate(0px,0px);opacity:1.1;}
+    }
+
+    /*=== Header ===== */
+
+    #header{
+        border: 1px solid none;
+        width: 100%;
+        background-color: white;
+        color: #109d92;
+        font-weight: bold;
+        padding: 8px 15px;
+    }
+
+    .header{
+        border: 1px solid #109d92;
+        background-color: #109d92;
+        color: white;
+        height: 28px;
+        font-weight: bold;
+    }
+
+    .header:hover{
+        border: 1px solid #16d4c5;
+        background-color: #16d4c5;
+        color: white;
+        font-weight: bold;
+    }
+
+    /*=== Daftar Menu list ===*/
+
+    .daftar-menu{
+        margin: 15px 1.7%;
+        float: left;
+        width: 20%;
+        height:auto;
+        padding: 10px 10px;
+        font-size: 1em;
+        font-weight: bold;
+        box-shadow: 0px 0px 5px #235e5a;
+        border-radius: 10px;
+    }
+
+
+    .daftar-menu1{
+        margin: 15px 11px;
+        float: left;
+        width: 20%;
+        height: 300px;
+        padding: 20px 20px;
+        font-size: 1em;
+        box-shadow: 0px 0px 5px #010209;
+        border-radius: 10px;
+    }
+
+    /*==== Halaman =====*/
+    #halaman{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-top: 750px;
+        border: 1px solid none;
+        padding: 3px 10px;
+        background-color: #109d92;
+    }
+
+    #halaman a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #halaman a:hover{
+        color: #f50b0b;
+    }
+
+    #tombol-log{
+        border: 0.5px solid #1da9c2;
+        background-color: white;
+        width: 70%;
+        height: 25px;
+    }
+
+    #tombol-log:hover{
+        color: white;
+        background-color: #34cbd0;
+    }
+
+    #tombol{
+        border: 3px solid #1da9c2;
+        background-color: white;
+        width: 100%;
+        padding: 5px 5px;
+        height: 40px;
+        font-weight: bold;
+    }
+
+    #tombol:hover{
+        color: white;
+        background-color: #34cbd0;
+    }
+
+    /* menu modal */
+
+    hr {
+        clear: both;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: 0;
+    }
+    h1 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .btn {
+        background: white;
+        border: #1fc6c6 solid 1px;
+        border-radius: 8px;
+        color: #1fc6c6;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 14px;
+        padding: 8px 15px;
+        text-decoration: none;
+        text-align: center;
+        min-width: 60px;
+        position: relative;
+        transition: color .1s ease;
+    }
+    .btn:hover {
+        background: #1fc6c6;
+        border: #1fc6c6 solid 1px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .btn-close {
+        color: #aaaaaa;
+        font-size: 30px;
+        text-decoration: none;
+        position: absolute;
+        right: 5px;
+        top: 0;
+    }
+    .btn-close:hover {
+        color: #919191;
+    }
+    .modal:before {
+        content: "";
+        display: none;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+    .modal:target:before {
+        display: block;
+    }
+    .modal:target .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        top: 20%;
+    }
+    .modal-dialog {
+        background: #fefefe;
+        border: #333333 solid 1px;
+        border-radius: 10px;
+        margin-left: -200px;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 11;
+        width: 550px;
+        -webkit-transform: translate(0, -500%);
+        -ms-transform: translate(0, -500%);
+        transform: translate(0, -500%);
+        -webkit-transition: -webkit-transform 1s ease-out;
+        -moz-transition: -moz-transform 1s ease-out;
+        -o-transition: -o-transform 1s ease-out;
+        transition: transform 1s ease-out;
+    }
+    .modal-body {
+        padding: 20px;
+    }
+    .modal-header,
+    .modal-footer {
+        padding: 10px 20px;
+    }
+    .modal-header {
+    }
+    .modal-header h2 {
+        font-size: 20px;
+    }
+    .modal-footer {
+        text-align: right;
+    }
+
+    /* ==== info ==== */
+    #info center{
+        font-size: 2em;
+        color: #0dd4c4;
+        font-weight: bold;
+    }
